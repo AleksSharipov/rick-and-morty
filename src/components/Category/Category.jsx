@@ -18,11 +18,6 @@ export default function Category() {
   const [type, setType] = useState('');
   const [gender, setGender] = useState('');
 
-  // const [obj, setObj] = setState({
-  //   'name': '',
-  // })
-
-
   const onSubmitForm = (e) => {
     e.preventDefault();
 
