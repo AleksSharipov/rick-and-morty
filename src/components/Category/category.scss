@@ -1,0 +1,84 @@
+.category {
+  margin-bottom: 50px; 
+  max-width: 1120px;
+  width: 100%; 
+  margin: 0px auto 50px;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0px 15px;  
+
+  form  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background-color: rgb(60, 62, 68);
+    border-radius: 15px;
+    
+    @media (max-width: 1038px) {
+      flex-direction: column;
+      width: 100%;
+      justify-content: flex-start;
+    }
+    
+    label {
+      font-size: 18px;
+
+      @media (max-width: 1038px) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      input {
+        margin-left: 10px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding: 3px 6px;
+        font-size: 14px;
+
+        @media (max-width: 1038px) {
+          width: 90%;
+        }
+
+      }
+
+      select {
+        border: 1px solid grey;
+        border-radius: 5px;
+        margin-left: 10px;
+        padding: 3px 6px;
+        font-size: 14px;
+
+        @media (max-width: 1038px) {
+          width: 90%;
+        }
+      }
+
+    }
+
+    div {
+      margin-left: auto;
+
+      button {
+        background-color: inherit;
+        border: 1px solid grey;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px;
+        margin: 20px 0 0 15px;
+  
+        &:hover {
+          border-color: rgb(255, 152, 0);
+          background-color: rgb(255, 152, 0);
+        }
+      }
+    }
+  }
+}
